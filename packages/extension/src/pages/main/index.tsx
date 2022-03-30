@@ -126,13 +126,13 @@ export const MainPage: FunctionComponent = observer(() => {
           </div>
         </CardBody>
       </Card>
-      {chainStore.current.walletUrlForStaking ? (
-        <Card className={classnames(style.card, "shadow")}>
-          <CardBody>
-            <StakeView />
-          </CardBody>
-        </Card>
-      ) : null}
+      {/*{chainStore.current.walletUrlForStaking ? (*/}
+      {/*  <Card className={classnames(style.card, "shadow")}>*/}
+      {/*    <CardBody>*/}
+      {/*      <StakeView />*/}
+      {/*    </CardBody>*/}
+      {/*  </Card>*/}
+      {/*) : null}*/}
       {hasTokens ? (
         <Card className={classnames(style.card, "shadow")}>
           <CardBody>{<TokensView />}</CardBody>

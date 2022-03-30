@@ -284,23 +284,23 @@ export const AssetStakedChartView: FunctionComponent = observer(() => {
             {stakable.shrink(true).maxDecimals(6).toString()}
           </div>
         </div>
-        <div className={styleAsset.legend}>
-          <div className={styleAsset.label} style={{ color: "#11cdef" }}>
-            <span className="badge-dot badge badge-secondary">
-              <i className="bg-info" />
-            </span>
-            <FormattedMessage id="main.account.chart.staked-balance" />
-          </div>
-          <div style={{ minWidth: "16px" }} />
-          <div
-            className={styleAsset.value}
-            style={{
-              color: "#525f7f",
-            }}
-          >
-            {stakedSum.shrink(true).maxDecimals(6).toString()}
-          </div>
-        </div>
+        {/*<div className={styleAsset.legend}>*/}
+        {/*  <div className={styleAsset.label} style={{ color: "#11cdef" }}>*/}
+        {/*    <span className="badge-dot badge badge-secondary">*/}
+        {/*      <i className="bg-info" />*/}
+        {/*    </span>*/}
+        {/*    <FormattedMessage id="main.account.chart.staked-balance" />*/}
+        {/*  </div>*/}
+        {/*  <div style={{ minWidth: "16px" }} />*/}
+        {/*  <div*/}
+        {/*    className={styleAsset.value}*/}
+        {/*    style={{*/}
+        {/*      color: "#525f7f",*/}
+        {/*    }}*/}
+        {/*  >*/}
+        {/*    {stakedSum.shrink(true).maxDecimals(6).toString()}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </div>
     </React.Fragment>
   );

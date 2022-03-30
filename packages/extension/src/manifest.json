@@ -1,12 +1,11 @@
 {
   "manifest_version": 2,
-
-  "name": "Keplr",
-  "description": "Keplr is a browser extension wallet for the Inter blockchain ecosystem.",
-  "version": "0.9.17",
+  "name": "Imversed",
+  "description": "Imversed is a browser extension wallet for the own ecosystem.",
+  "version": "0.1.0",
   "applications": {
     "gecko": {
-      "id": "keplr-extension@keplr.app",
+      "id": "support@imvesed.com",
       "strict_min_version": "56.0"
     }
   },
@@ -15,20 +14,31 @@
     "48": "assets/icon-48.png",
     "128": "assets/icon-128.png"
   },
-
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Keplr"
+    "default_title": "Imversed wallet"
   },
   "background": {
-    "scripts": ["browser-polyfill.js", "background.bundle.js"],
+    "scripts": [
+      "browser-polyfill.js",
+      "background.bundle.js"
+    ],
     "persistent": true
   },
-  "permissions": ["storage", "notifications", "identity"],
+  "permissions": [
+    "storage",
+    "notifications",
+    "identity"
+  ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["browser-polyfill.js", "contentScripts.bundle.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "browser-polyfill.js",
+        "contentScripts.bundle.js"
+      ],
       "run_at": "document_start",
       "all_frames": true
     }

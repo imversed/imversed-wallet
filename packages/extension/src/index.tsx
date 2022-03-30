@@ -111,7 +111,7 @@ const StateRenderer: FunctionComponent = observer(() => {
         <Banner
           icon={require("./public/assets/temp-icon.svg")}
           logo={require("./public/assets/logo-temp.png")}
-          subtitle="Wallet for the Interchain"
+          subtitle=""
         />
       </div>
     );
@@ -121,7 +121,7 @@ const StateRenderer: FunctionComponent = observer(() => {
         <Banner
           icon={require("./public/assets/temp-icon.svg")}
           logo={require("./public/assets/logo-temp.png")}
-          subtitle="Wallet for the Interchain"
+          subtitle=""
         />
       </div>
     );

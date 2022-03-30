@@ -164,7 +164,7 @@ describe("Test ADR-36 Amino Sign Doc", () => {
           ],
           memo: "",
         },
-        "cosmos"
+        "imv"
       )
     ).toThrow();
   });

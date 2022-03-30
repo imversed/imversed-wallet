@@ -67,11 +67,11 @@ export const RegisterPage: FunctionComponent = observer(() => {
       intro: RecoverMnemonicIntro,
       page: RecoverMnemonicPage,
     },
-    {
-      type: TypeImportLedger,
-      intro: ImportLedgerIntro,
-      page: ImportLedgerPage,
-    },
+    // {
+    //   type: TypeImportLedger,
+    //   intro: ImportLedgerIntro,
+    //   page: ImportLedgerPage,
+    // },
   ]);
 
   return (
@@ -91,7 +91,7 @@ export const RegisterPage: FunctionComponent = observer(() => {
             src={require("../../public/assets/logo-temp.png")}
             alt="logo"
           />
-          <div className={style.paragraph}>Wallet for the Interchain</div>
+          <div className={style.paragraph}></div>
         </div>
       </div>
       {registerConfig.render()}

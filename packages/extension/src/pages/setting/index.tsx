@@ -83,37 +83,37 @@ export const SettingPage: FunctionComponent = observer(() => {
             []
           )}
         />
-        <PageButton
-          title={intl.formatMessage({
-            id: "setting.connections",
-          })}
-          paragraph={intl.formatMessage({
-            id: "setting.connections.paragraph",
-          })}
-          onClick={() => {
-            history.push({
-              pathname: "/setting/connections",
-            });
-          }}
-          icons={useMemo(
-            () => [<i key="next" className="fas fa-chevron-right" />],
-            []
-          )}
-        />
-        <PageButton
-          title={intl.formatMessage({
-            id: "setting.export-to-mobile",
-          })}
-          onClick={() => {
-            history.push({
-              pathname: "/setting/export-to-mobile",
-            });
-          }}
-          icons={useMemo(
-            () => [<i key="next" className="fas fa-chevron-right" />],
-            []
-          )}
-        />
+        {/*<PageButton*/}
+        {/*  title={intl.formatMessage({*/}
+        {/*    id: "setting.connections",*/}
+        {/*  })}*/}
+        {/*  paragraph={intl.formatMessage({*/}
+        {/*    id: "setting.connections.paragraph",*/}
+        {/*  })}*/}
+        {/*  onClick={() => {*/}
+        {/*    history.push({*/}
+        {/*      pathname: "/setting/connections",*/}
+        {/*    });*/}
+        {/*  }}*/}
+        {/*  icons={useMemo(*/}
+        {/*    () => [<i key="next" className="fas fa-chevron-right" />],*/}
+        {/*    []*/}
+        {/*  )}*/}
+        {/*/>*/}
+        {/*<PageButton*/}
+        {/*  title={intl.formatMessage({*/}
+        {/*    id: "setting.export-to-mobile",*/}
+        {/*  })}*/}
+        {/*  onClick={() => {*/}
+        {/*    history.push({*/}
+        {/*      pathname: "/setting/export-to-mobile",*/}
+        {/*    });*/}
+        {/*  }}*/}
+        {/*  icons={useMemo(*/}
+        {/*    () => [<i key="next" className="fas fa-chevron-right" />],*/}
+        {/*    []*/}
+        {/*  )}*/}
+        {/*/>*/}
         <PageButton
           title="Show Advanced IBC Transfers"
           onClick={() => {
@@ -140,20 +140,20 @@ export const SettingPage: FunctionComponent = observer(() => {
             </label>,
           ]}
         />
-        <PageButton
-          title={intl.formatMessage({
-            id: "setting.credit",
-          })}
-          onClick={() => {
-            history.push({
-              pathname: "/setting/credit",
-            });
-          }}
-          icons={useMemo(
-            () => [<i key="next" className="fas fa-chevron-right" />],
-            []
-          )}
-        />
+        {/*<PageButton*/}
+        {/*  title={intl.formatMessage({*/}
+        {/*    id: "setting.credit",*/}
+        {/*  })}*/}
+        {/*  onClick={() => {*/}
+        {/*    history.push({*/}
+        {/*      pathname: "/setting/credit",*/}
+        {/*    });*/}
+        {/*  }}*/}
+        {/*  icons={useMemo(*/}
+        {/*    () => [<i key="next" className="fas fa-chevron-right" />],*/}
+        {/*    []*/}
+        {/*  )}*/}
+        {/*/>*/}
       </div>
     </HeaderLayout>
   );

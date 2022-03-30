@@ -63,7 +63,7 @@ export const Menu: FunctionComponent = observer(() => {
         </div>
       ) : null}
       {/* Empty div for separating last item */}
-      <div style={{ flex: 1 }} />
+      {/*<div style={{ flex: 1 }} />*/}
       <div
         className={styleMenu.item}
         onClick={() => {
@@ -71,20 +71,6 @@ export const Menu: FunctionComponent = observer(() => {
         }}
       >
         <FormattedMessage id="main.menu.sign-out" />
-      </div>
-      <div>
-        <hr className="mx-4 my-1" />
-      </div>
-      <div className={styleMenu.footer}>
-        <a
-          className={styleMenu.inner}
-          href="https://github.com/everett-protocol/keplr-extension"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-github" />
-          <FormattedMessage id="main.menu.footer.github" />
-        </a>
       </div>
     </div>
   );
