@@ -1,5 +1,6 @@
 import { BaseKVStore } from "./base";
 import { KVStoreProvider } from "./interface";
+import browser from "webextension-polyfill";
 
 const ExtensionKVStoreProvider: KVStoreProvider = {
   get:

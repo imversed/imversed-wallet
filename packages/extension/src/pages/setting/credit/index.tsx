@@ -3,6 +3,7 @@ import { HeaderLayout } from "../../../layouts";
 import { useHistory } from "react-router";
 import { useIntl } from "react-intl";
 import { PageButton } from "../page-button";
+import browser from "webextension-polyfill";
 
 import style from "./style.module.scss";
 

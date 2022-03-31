@@ -1,4 +1,6 @@
 import { WEBPAGE_PORT } from "@keplr-wallet/router";
+import browser from "webextension-polyfill";
+
 import {
   ContentScriptEnv,
   ContentScriptGuards,

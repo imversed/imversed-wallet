@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useEffect } from "react";
+import browser from "webextension-polyfill";
 import {
   AddressInput,
   FeeButtons,

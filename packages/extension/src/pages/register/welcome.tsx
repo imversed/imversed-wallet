@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import browser from "webextension-polyfill";
 
 import styleWelcome from "./welcome.module.scss";
 import { Button } from "reactstrap";

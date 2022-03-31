@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useState } from "react";
+import browser from "webextension-polyfill";
 
 import { HeaderLayout } from "../../../layouts";
 

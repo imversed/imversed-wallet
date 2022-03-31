@@ -1,3 +1,4 @@
+import browser from "webextension-polyfill";
 import React, { FunctionComponent } from "react";
 import ReactDOM from "react-dom";
 

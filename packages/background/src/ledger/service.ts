@@ -1,3 +1,4 @@
+import browser from "webextension-polyfill";
 import { delay as diDelay, inject, singleton } from "tsyringe";
 import { TYPES } from "../types";
 

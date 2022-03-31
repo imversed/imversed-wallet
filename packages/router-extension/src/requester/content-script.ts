@@ -4,6 +4,7 @@ import {
   JSONUint8Array,
 } from "@keplr-wallet/router";
 import { getKeplrExtensionRouterId } from "../utils";
+import browser from "webextension-polyfill";
 
 // The message requester to send the message to the content scripts.
 // This will send message to the tab with the content script.

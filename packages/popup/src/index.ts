@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 export const PopupSize = {
   width: 360,
   height: 580,

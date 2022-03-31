@@ -5,6 +5,7 @@ import {
   EnvProducer,
 } from "@keplr-wallet/router";
 import { getKeplrExtensionRouterId } from "../utils";
+import browser from "webextension-polyfill";
 
 export class ExtensionRouter extends Router {
   constructor(envProducer: EnvProducer) {

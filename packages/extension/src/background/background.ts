@@ -1,4 +1,5 @@
 import { BACKGROUND_PORT } from "@keplr-wallet/router";
+import browser from "webextension-polyfill";
 import {
   ExtensionRouter,
   ExtensionGuards,

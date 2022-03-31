@@ -6,6 +6,7 @@ import {
 } from "@keplr-wallet/router";
 import { openPopupWindow as openPopupWindowInner } from "@keplr-wallet/popup";
 import { InExtensionMessageRequester } from "../requester";
+import browser from "webextension-polyfill";
 
 class PromiseQueue {
   protected workingOnPromise: boolean = false;

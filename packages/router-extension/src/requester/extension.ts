@@ -4,6 +4,7 @@ import {
   JSONUint8Array,
 } from "@keplr-wallet/router";
 import { getKeplrExtensionRouterId } from "../utils";
+import browser from "webextension-polyfill";
 
 export class InExtensionMessageRequester implements MessageRequester {
   async sendMessage<M extends Message<unknown>>(
