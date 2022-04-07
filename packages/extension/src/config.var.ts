@@ -143,4 +143,9 @@ export const EVMOS_RPC_CONFIG: AxiosRequestConfig | undefined = undefined;
 export const EVMOS_REST_ENDPOINT = "";
 export const EVMOS_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
 
+export const CANARY_RPC_ENDPOINT = "http://qc.imversed.com:9090";
+export const CANARY_RPC_CONFIG: AxiosRequestConfig | undefined = undefined;
+export const CANARY_REST_ENDPOINT = "http://qc.imversed.com:9090";
+export const CANARY_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
+
 export const PRIVILEGED_ORIGINS: string[] = [];

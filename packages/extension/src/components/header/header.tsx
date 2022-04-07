@@ -18,7 +18,10 @@ export class Header extends React.Component<HeaderProps> {
       <div className={classnames(["header", { fixed }])}>
         <div className="header-menu-left">{left}</div>
         <div className="header-section">
-          <img className={style.headerLogo} src={require("../../public/assets/logo-temp.png")} />
+          <img
+            className={style.headerLogo}
+            src={require("../../public/assets/logo-temp.png")}
+          />
         </div>
         <div className="header-menu-right">{right}</div>
       </div>

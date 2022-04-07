@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Imversed",
   "description": "Imversed is a browser extension wallet for the own ecosystem.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "applications": {
     "gecko": {
       "id": "support@imvesed.com",
@@ -26,32 +26,19 @@
   "background": {
     "service_worker": "background.bundle.js"
   },
-  "permissions": [
-    "storage",
-    "notifications",
-    "identity"
-  ],
+  "permissions": ["storage", "notifications", "identity"],
   "content_scripts": [
     {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "contentScripts.bundle.js"
-      ],
+      "matches": ["<all_urls>"],
+      "js": ["contentScripts.bundle.js"],
       "run_at": "document_start",
       "all_frames": true
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": [
-        "injectedScript.bundle.js",
-        "assets/temp-icon.svg"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
+      "resources": ["injectedScript.bundle.js", "assets/temp-icon.svg"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

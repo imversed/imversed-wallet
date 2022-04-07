@@ -2,7 +2,7 @@ import { Message } from "./message";
 import browser from "webextension-polyfill";
 
 export type MessageSender = Pick<
-  browser.runtime.MessageSender,
+  browser.Runtime.MessageSender,
   "id" | "url" | "tab"
 >;
 

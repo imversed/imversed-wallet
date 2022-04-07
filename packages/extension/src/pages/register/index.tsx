@@ -18,11 +18,11 @@ import {
   RecoverMnemonicPage,
   TypeRecoverMnemonic,
 } from "./mnemonic";
-import {
-  ImportLedgerIntro,
-  ImportLedgerPage,
-  TypeImportLedger,
-} from "./ledger";
+// import {
+//   ImportLedgerIntro,
+//   ImportLedgerPage,
+//   TypeImportLedger,
+// } from "./ledger";
 import { WelcomePage } from "./welcome";
 import { AdditionalSignInPrepend } from "../../config.ui";
 
@@ -91,7 +91,7 @@ export const RegisterPage: FunctionComponent = observer(() => {
             src={require("../../public/assets/logo-temp.png")}
             alt="logo"
           />
-          <div className={style.paragraph}></div>
+          <div className={style.paragraph} />
         </div>
       </div>
       {registerConfig.render()}

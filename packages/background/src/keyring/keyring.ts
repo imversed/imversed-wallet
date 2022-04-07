@@ -43,8 +43,8 @@ export type MultiKeyStoreInfoWithSelectedElem = MultiKeyStoreInfoElem & {
 };
 export type MultiKeyStoreInfoWithSelected = MultiKeyStoreInfoWithSelectedElem[];
 
-const KeyStoreKey = "key-store";
-const KeyMultiStoreKey = "key-multi-store";
+const KeyStoreKey = "imv-key-store";
+const KeyMultiStoreKey = "imv-key-multi-store";
 
 /*
  Keyring stores keys in persistent backround.

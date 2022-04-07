@@ -8,7 +8,7 @@ import { useStore } from "../../stores";
 import style from "./style.module.scss";
 import { ToolTip } from "../../components/tooltip";
 
-import { ChainList } from "./chain-list";
+// import { ChainList } from "./chain-list";
 import { Menu, useMenu, MenuButton } from "../menu";
 
 import { motion } from "framer-motion";
@@ -89,7 +89,7 @@ export const Header: FunctionComponent<Props & LocalProps> = observer(
         {showChainName || alternativeTitle ? (
           <ToolTip
             trigger={chainInfoChangable ? "click" : "static"}
-            // tooltip={<ChainList />}
+            tooltip={<React.Fragment />}
           >
             <div
               className={style.chainListContainer}
