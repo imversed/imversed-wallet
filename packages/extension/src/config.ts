@@ -148,7 +148,7 @@ export const EmbedChainInfos: ChainInfo[] = [
       },
     ],
     coinType: 118,
-    features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"],
+    features: ["ibc-transfer", "ibc-go"],
   },
   // {
   //   rpc: CANARY_RPC_ENDPOINT,
