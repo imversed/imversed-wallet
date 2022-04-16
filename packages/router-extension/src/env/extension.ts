@@ -152,31 +152,43 @@ export class ExtensionEnv {
           url += "?" + queryString;
         }
 
-        const backgroundPage = await browser.runtime.getBackgroundPage();
-        const views = browser.extension
-          .getViews({
-            // Request only for the same tab as the requested frontend.
-            // But the browser popup itself has no information about tab.
-            // Also, if user has multiple windows on, we need another way to distinguish them.
-            // See the comment right below this part.
-            tabId: sender.tab?.id,
-          })
-          .filter((window) => {
-            // You need to request interaction with the frontend that requested the message.
-            // It is difficult to achieve this with the browser api alone.
-            // Check the router id under the window of each view
-            // and process only the view that has the same router id of the requested frontend.
-            return (
-              window.location.href !== backgroundPage.location.href &&
-              (routerMeta.routerId == null ||
-                routerMeta.routerId === window.keplrExtensionRouterId)
-            );
-          });
-        if (views.length > 0) {
-          for (const view of views) {
-            view.location.href = url;
-          }
-        }
+        await browser.runtime.sendMessage({
+          port: APP_PORT,
+          type: "popup-change_url",
+          msg: {
+            url,
+          },
+        });
+
+        // try {
+        //   const backgroundPage = await browser.runtime.getBackgroundPage();
+        //   const views = browser.extension
+        //     .getViews({
+        //       // Request only for the same tab as the requested frontend.
+        //       // But the browser popup itself has no information about tab.
+        //       // Also, if user has multiple windows on, we need another way to distinguish them.
+        //       // See the comment right below this part.
+        //       tabId: sender.tab?.id,
+        //     })
+        //     .filter((window) => {
+        //       // You need to request interaction with the frontend that requested the message.
+        //       // It is difficult to achieve this with the browser api alone.
+        //       // Check the router id under the window of each view
+        //       // and process only the view that has the same router id of the requested frontend.
+        //       return (
+        //         window.location.href !== backgroundPage.location.href &&
+        //         (routerMeta.routerId == null ||
+        //           routerMeta.routerId === window.keplrExtensionRouterId)
+        //       );
+        //     });
+        //   if (views.length > 0) {
+        //     for (const view of views) {
+        //       view.location.href = url;
+        //     }
+        //   }
+        // } catch (err) {
+        //   console.error(err);
+        // }
 
         msg.routerMeta = {
           ...msg.routerMeta,

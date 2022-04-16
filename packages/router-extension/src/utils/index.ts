@@ -2,9 +2,15 @@
  * getKeplrExtensionRouterId returns the `window.keplrExtensionRouterId`.
  * If the `window.keplrExtensionRouterId` is not initialized, it will be initialized and returned.
  */
+
+const memoryStore: any = {
+  keplrExtensionRouterId: null,
+};
+
 export function getKeplrExtensionRouterId(): number {
-  if (window.keplrExtensionRouterId == null) {
-    window.keplrExtensionRouterId = Math.floor(Math.random() * 1000000);
+  console.log(memoryStore.keplrExtensionRouterId);
+  if (memoryStore.keplrExtensionRouterId == null) {
+    memoryStore.keplrExtensionRouterId = Math.floor(Math.random() * 1000000);
   }
-  return window.keplrExtensionRouterId;
+  return memoryStore.keplrExtensionRouterId;
 }

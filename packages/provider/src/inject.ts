@@ -24,6 +24,7 @@ import { DirectSignResponse, OfflineDirectSigner } from "@cosmjs/proto-signing";
 import { CosmJSOfflineSigner, CosmJSOfflineSignerOnlyAmino } from "./cosmjs";
 import deepmerge from "deepmerge";
 import Long from "long";
+import browser from "webextension-polyfill";
 
 export interface ProxyRequest {
   type: "proxy-request";
@@ -54,7 +55,7 @@ export class InjectedKeplr implements IKeplr {
       addMessageListener: (fn: (e: any) => void) =>
         window.addEventListener("message", fn),
       postMessage: (message) =>
-        window.postMessage(message, window.location.origin),
+        window.postMessage(message, browser.runtime.getURL("")),
     },
     parseMessage?: (message: any) => any
   ) {
@@ -240,7 +241,7 @@ export class InjectedKeplr implements IKeplr {
       removeMessageListener: (fn: (e: any) => void) =>
         window.removeEventListener("message", fn),
       postMessage: (message) =>
-        window.postMessage(message, window.location.origin),
+        window.postMessage(message, browser.runtime.getURL("")),
     },
     protected readonly parseMessage?: (message: any) => any
   ) {}

@@ -111,13 +111,13 @@ export const EmbedChainInfos: ChainInfo[] = [
     rpcConfig: COSMOS_RPC_CONFIG,
     rest: COSMOS_REST_ENDPOINT,
     restConfig: COSMOS_REST_CONFIG,
-    chainId: "imv",
+    chainId: "imversed-test-1",
     chainName: "Imv Hub",
     stakeCurrency: {
       coinDenom: "NIMV",
       coinMinimalDenom: "nimv",
       coinDecimals: 6,
-      coinGeckoId: "imv",
+      coinGeckoId: "sommelier",
     },
     walletUrl:
       process.env.NODE_ENV === "production"
@@ -136,7 +136,7 @@ export const EmbedChainInfos: ChainInfo[] = [
         coinDenom: "NIMV",
         coinMinimalDenom: "nimv",
         coinDecimals: 6,
-        coinGeckoId: "imv",
+        coinGeckoId: "sommelier",
       },
     ],
     feeCurrencies: [
@@ -144,7 +144,7 @@ export const EmbedChainInfos: ChainInfo[] = [
         coinDenom: "NIMV",
         coinMinimalDenom: "nimv",
         coinDecimals: 6,
-        coinGeckoId: "imv",
+        coinGeckoId: "sommelier",
       },
     ],
     coinType: 118,

@@ -2,6 +2,7 @@ import { delay, inject, singleton } from "tsyringe";
 import { TYPES } from "../types";
 
 import Axios from "axios";
+import adapter from "@vespaiach/axios-fetch-adapter";
 import { ChainsService } from "../chains";
 import { PermissionService } from "../permission";
 import { TendermintTxTracer } from "@keplr-wallet/cosmos";
@@ -42,6 +43,7 @@ export class BackgroundTxService {
     const restInstance = Axios.create({
       ...{
         baseURL: chainInfo.rest,
+        adapter,
       },
       ...chainInfo.restConfig,
     });

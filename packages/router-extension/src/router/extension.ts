@@ -3,6 +3,7 @@ import {
   MessageSender,
   Result,
   EnvProducer,
+  APP_PORT,
 } from "@keplr-wallet/router";
 import { getKeplrExtensionRouterId } from "../utils";
 import browser from "webextension-polyfill";
@@ -48,6 +49,12 @@ export class ExtensionRouter extends Router {
     sender: MessageSender
   ): Promise<Result> | undefined => {
     if (message.port !== this.port) {
+      return;
+    }
+
+    // Need to set params from background inset getBackgroundPage()
+    if (message.type === "popup-change_url" && message.port === APP_PORT) {
+      window.location.href = message.msg.url;
       return;
     }
 
