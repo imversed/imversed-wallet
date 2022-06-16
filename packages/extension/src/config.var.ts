@@ -1,8 +1,8 @@
 import { AxiosRequestConfig } from "axios";
 
-export const COSMOS_RPC_ENDPOINT = "http://qs.imversed.com:26657";
+export const COSMOS_RPC_ENDPOINT = "http://qс.imversed.com:26657";
 export const COSMOS_RPC_CONFIG: AxiosRequestConfig | undefined = undefined;
-export const COSMOS_REST_ENDPOINT = "http://qs.imversed.com:1317";
+export const COSMOS_REST_ENDPOINT = "http://qс.imversed.com:1317";
 export const COSMOS_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
 
 export const KAVA_RPC_ENDPOINT = "";
@@ -143,9 +143,9 @@ export const EVMOS_RPC_CONFIG: AxiosRequestConfig | undefined = undefined;
 export const EVMOS_REST_ENDPOINT = "";
 export const EVMOS_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
 
-export const CANARY_RPC_ENDPOINT = "http://qc.imversed.com:9090";
+export const CANARY_RPC_ENDPOINT = "http://qс.imversed.com:9090";
 export const CANARY_RPC_CONFIG: AxiosRequestConfig | undefined = undefined;
-export const CANARY_REST_ENDPOINT = "http://qc.imversed.com:9090";
+export const CANARY_REST_ENDPOINT = "http://qс.imversed.com:9090";
 export const CANARY_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
 
 export const PRIVILEGED_ORIGINS: string[] = [];
