@@ -121,12 +121,12 @@ export const EmbedChainInfos: ChainInfo[] = [
     },
     walletUrl:
       process.env.NODE_ENV === "production"
-        ? "http://qс.imversed.com:1317/#/cosmoshub/stake"
-        : "http://qс.imversed.com:1317/#/cosmoshub/stake",
+        ? "http://qc.imversed.com:1317/#/cosmoshub/stake"
+        : "http://qc.imversed.com:1317/#/cosmoshub/stake",
     walletUrlForStaking:
       process.env.NODE_ENV === "production"
-        ? "http://qс.imversed.com:1317/#/cosmoshub/stake"
-        : "http://qс.imversed.com:1317/#/cosmoshub/stake",
+        ? "http://qc.imversed.com:1317/#/cosmoshub/stake"
+        : "http://qc.imversed.com:1317/#/cosmoshub/stake",
     bip44: {
       coinType: 60,
     },
