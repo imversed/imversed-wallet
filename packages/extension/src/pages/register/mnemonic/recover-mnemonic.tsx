@@ -80,7 +80,7 @@ export const RecoverMnemonicPage: FunctionComponent<{
 }> = observer(({ registerConfig }) => {
   const intl = useIntl();
 
-  const bip44Option = useBIP44Option();
+  const bip44Option = useBIP44Option(60);
 
   const { analyticsStore } = useStore();
 

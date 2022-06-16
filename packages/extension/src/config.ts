@@ -128,7 +128,7 @@ export const EmbedChainInfos: ChainInfo[] = [
         ? "http://qs.imversed.com:1317/#/cosmoshub/stake"
         : "http://qs.imversed.com:1317/#/cosmoshub/stake",
     bip44: {
-      coinType: 118,
+      coinType: 60,
     },
     bech32Config: Bech32Address.defaultBech32Config("imv"),
     currencies: [
@@ -147,7 +147,7 @@ export const EmbedChainInfos: ChainInfo[] = [
         coinGeckoId: "imv",
       },
     ],
-    coinType: 118,
+    coinType: 60,
     features: ["ibc-transfer", "ibc-go"],
   },
   // {

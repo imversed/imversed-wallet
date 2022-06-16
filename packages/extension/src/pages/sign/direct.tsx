@@ -12,7 +12,7 @@ import {
 import { CoinPrimitive } from "@keplr-wallet/stores";
 
 import { Buffer } from "buffer/";
-import { fromUtf8 } from "@cosmjs/encoding";
+import { fromUtf8 } from "@imversed/encoding";
 
 export function renderDirectMessage(
   msg: any,
