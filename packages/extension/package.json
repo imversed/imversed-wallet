@@ -1,6 +1,6 @@
 {
   "name": "@keplr-wallet/extension",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "chainapsis",
   "license": "Apache-2.0",
   "private": true,
@@ -15,10 +15,11 @@
     "version": "npx zx ./scripts/lerna-lifecyle-version.mjs"
   },
   "dependencies": {
-    "@cosmjs/encoding": "^0.24.0-alpha.25",
-    "@cosmjs/launchpad": "^0.24.0-alpha.25",
-    "@cosmjs/proto-signing": "^0.24.0-alpha.25",
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "@imversed/amino": "^0.28.4",
+    "@imversed/encoding": "^0.28.4",
+    "@imversed/proto-signing": "^0.28.4",
+    "@imversed/stargate": "^0.28.4",
     "@keplr-wallet/analytics": "0.10.0",
     "@keplr-wallet/background": "0.10.0",
     "@keplr-wallet/common": "0.10.0",

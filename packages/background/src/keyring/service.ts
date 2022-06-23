@@ -31,8 +31,8 @@ import {
   AminoSignResponse,
   StdSignDoc,
   StdSignature,
-} from "@cosmjs/launchpad";
-import { DirectSignResponse, makeSignBytes } from "@cosmjs/proto-signing";
+} from "@imversed/amino";
+import { DirectSignResponse, makeSignBytes } from "@imversed/proto-signing";
 
 import { RNG } from "@keplr-wallet/crypto";
 import { cosmos } from "@keplr-wallet/cosmos";

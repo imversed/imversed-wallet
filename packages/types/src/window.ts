@@ -1,7 +1,6 @@
 import { Keplr } from "./wallet";
-import { OfflineSigner } from "@cosmjs/launchpad";
 import { SecretUtils } from "secretjs/types/enigmautils";
-import { OfflineDirectSigner } from "@cosmjs/proto-signing";
+import { OfflineDirectSigner, OfflineSigner } from "@imversed/proto-signing";
 
 export interface Window {
   keplr?: Keplr;

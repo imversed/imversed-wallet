@@ -114,40 +114,40 @@ export const EmbedChainInfos: ChainInfo[] = [
     chainId: "imv",
     chainName: "Imv Hub",
     stakeCurrency: {
-      coinDenom: "NIMV",
-      coinMinimalDenom: "nimv",
-      coinDecimals: 6,
+      coinDenom: "IMV",
+      coinMinimalDenom: "aimv",
+      coinDecimals: 18,
       coinGeckoId: "imv",
     },
     walletUrl:
       process.env.NODE_ENV === "production"
-        ? "http://qs.imversed.com:1317/#/cosmoshub/stake"
-        : "http://qs.imversed.com:1317/#/cosmoshub/stake",
+        ? "http://qc.imversed.com:1317/#/cosmoshub/stake"
+        : "http://qc.imversed.com:1317/#/cosmoshub/stake",
     walletUrlForStaking:
       process.env.NODE_ENV === "production"
-        ? "http://qs.imversed.com:1317/#/cosmoshub/stake"
-        : "http://qs.imversed.com:1317/#/cosmoshub/stake",
+        ? "http://qc.imversed.com:1317/#/cosmoshub/stake"
+        : "http://qc.imversed.com:1317/#/cosmoshub/stake",
     bip44: {
-      coinType: 118,
+      coinType: 60,
     },
     bech32Config: Bech32Address.defaultBech32Config("imv"),
     currencies: [
       {
-        coinDenom: "NIMV",
-        coinMinimalDenom: "nimv",
-        coinDecimals: 6,
+        coinDenom: "IMV",
+        coinMinimalDenom: "aimv",
+        coinDecimals: 18,
         coinGeckoId: "imv",
       },
     ],
     feeCurrencies: [
       {
-        coinDenom: "NIMV",
-        coinMinimalDenom: "nimv",
-        coinDecimals: 6,
+        coinDenom: "IMV",
+        coinMinimalDenom: "aimv",
+        coinDecimals: 18,
         coinGeckoId: "imv",
       },
     ],
-    coinType: 118,
+    coinType: 60,
     features: ["ibc-transfer", "ibc-go"],
   },
   // {
